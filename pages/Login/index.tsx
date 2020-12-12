@@ -7,7 +7,7 @@ const cx = classnames.bind(styles);
 
 export default function Login() {
   return (
-    <div className={styles.container}>
+    <div className={cx(styles.container)}>
       <h1 className={styles.title}>
         <a href="https://nextjs.org">Next.js!</a>
       </h1>

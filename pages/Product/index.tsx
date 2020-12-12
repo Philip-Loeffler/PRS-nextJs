@@ -1,26 +1,26 @@
 import Link from "next/link";
 import Head from "next/head";
-import styles from "./User.module.css";
+import styles from "./Product.module.css";
 import { InferGetStaticPropsType } from "next";
 
-export default function User({
-  user,
+export default function Produc({
+  product,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <ul>
-      <li className={styles.error}>{user.firstName}</li>
+      <li className={styles.error}></li>
     </ul>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:8080/user/1");
+  const res = await fetch("http://localhost:8080/product/");
   console.log(res);
-  const user = await res.json();
+  const product = await res.json();
 
   return {
     props: {
-      user,
+      product,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
