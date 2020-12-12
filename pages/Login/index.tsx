@@ -7,11 +7,13 @@ const cx = classnames.bind(styles);
 
 export default function Login() {
   return (
-    <div className={cx("body")}>
-      <div className={cx("main")}>
-        <div className={cx("className")}>commit test</div>
-        <Input inputLabel="name" placeholder="name"></Input>
-        <Input inputLabel="name"></Input>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <a href="https://nextjs.org">Next.js!</a>
+      </h1>
+      <div className={styles.main}>
+        <Input inputLabel="" placeholder="enter name"></Input>
+        <Input inputLabel="" placeholder="enter password"></Input>
       </div>
     </div>
   );
