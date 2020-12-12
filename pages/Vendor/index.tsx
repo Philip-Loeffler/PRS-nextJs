@@ -9,6 +9,7 @@ export default function Vendor({
   return (
     <ul>
       <li className={styles.error}>{vendor.name}</li>
+      <li className={styles.error}>{vendor.address}</li>
     </ul>
   );
 }
